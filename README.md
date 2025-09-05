@@ -1,0 +1,1 @@
+Se inicia el proyecto Bienes Raices para practicar HTML, CSS, BEM y git.
