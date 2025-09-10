@@ -22,6 +22,12 @@ body {
 
 h1 {
     font-size: 3rem;
+}
+
+h1,
+h2,
+h3 {
+    margin: 1rem 0 4rem;
     line-height: 1.2;
 }
 
@@ -56,7 +62,6 @@ h1 {
 
 .header__h1 {
     font-weight: 300;
-    margin: 1rem 0 4rem;
 }
 
 .header__h1--bolder {
@@ -101,15 +106,42 @@ h1 {
 .header__h2 {
     font-size: 3rem;
     font-weight: 900;
-    line-height: 1.2;
 }
 
 .header__p {
     line-height: 1;
 }
 
+/*Sobre nosotros*/
 
+.sobre-nosotros {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
 
+.sobre-nosotros__contenedor {
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+.sobre-nosotros__h2 {
+    font-size: 5.8rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.sobre-nosotros__p {
+    text-align: left;
+}
+
+.sobre-nosotros__h2,
+.sobre-nosotros__p {
+    margin-bottom: 1rem;
+}
 
 @media (min-width: 768px) {
     .header__bar {
@@ -121,12 +153,6 @@ h1 {
     .menu {
         flex-direction: row;
         align-items: center;
-    }
-
-    .header__menu {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: end; */
     }
 
     .nav__element {
@@ -146,5 +172,19 @@ h1 {
 
     .header__slogan-container {
         text-align: right;
+    }
+}
+
+@media (min-width: 991px) {
+    .sobre-nosotros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background-position: bottom center;
+    }
+
+    .sobre-nosotros__contenedor {
+        grid-column: 2/4;
+        grid-row: 1/2;
     }
 }
