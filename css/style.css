@@ -143,6 +143,62 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.main {
+    margin-top: 5rem;
+}
+
+.main__title {
+    font-size: 5.8rem;
+    font-weight: 900;
+}
+
+.basico {
+    background-image: url(./../img/modelo_basico.jpg);
+}
+
+.premier {
+    background-image: url(./../img/modelo_premier.jpg);
+}
+
+.elite {
+    background-image: url(./../img/modelo_elite.jpg);
+}
+
+.card {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    margin-bottom: 5rem;
+}
+
+.card__info {
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.card__title {
+    grid-row: 1/2;
+    font-size: 5rem;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.card__link {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--gris);
+    border: 1px solid var(--gris);
+    padding: 0 2rem;
+    transition: 0.3s background-color;
+}
+
+.card__link:hover{
+    color: var(--blanco);
+    background-color: var(--gris);
+}
+
 @media (min-width: 768px) {
     .header__bar {
         display: flex;
@@ -172,6 +228,27 @@ h3 {
 
     .header__slogan-container {
         text-align: right;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        background-position: top right;
+    }
+
+    .card-bg--invertido {
+        background-position: top left;
+    }
+
+    .card__info {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 2rem 2rem 2rem 0;
+    }
+
+    .card__info--invertida {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding: 2rem;
     }
 }
 
