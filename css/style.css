@@ -70,7 +70,7 @@ img {
 }
 
 .header__h1--bolder {
-    font-weight: 800;
+    font-weight: 900;
 }
 
 .header__number {
@@ -82,10 +82,10 @@ img {
 
 .header__number::before {
     content: '';
-    display: inline-block;
+    display: block;
     background-image: url(./../img/telefono.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     width: 4rem;
     height: 4rem;
     margin-right: 1rem;
@@ -102,6 +102,11 @@ img {
     text-decoration: none;
     font-size: 2rem;
     padding: 0.5rem;
+}
+
+.nav__element:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: var(--negro);
 }
 
 .header__slogan {
@@ -238,6 +243,32 @@ img {
 .galeria__6 {
     grid-column: 1/2;
     grid-row: 2/4;
+}
+
+.footer {
+    color: var(--blanco);
+    background-image: url(./../img/footer_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer__p {
+    background-color: var(--negro);
+    padding: 1rem;
+    margin: 5rem 0 0 0;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.header__number--no-margin {
+    margin: 0;
 }
 
 @media (min-width: 768px) {
